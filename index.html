@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Flat UI</title>
+    <title>Urban Composting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
@@ -24,8 +24,6 @@
 
 
 
-
-
 <!-- switch out container div boxes -->
 <script type="text/javascript">
 // From: http://www.webdeveloper.com/forum/showthread.php?266743-Switch-Div-Content-Using-Javascript&p=1229155#post1229155
@@ -36,17 +34,18 @@ function showDiv(idInfo) {
 
 
   document.getElementById('container'+idInfo).style.display = 'block';
+
   return false;
 }
 </script>
-<style type="text/css">
 
+<style type="text/css">
 </style>
 
 </head>
 <body>
 
-    <div id="graph1" style="width:100%; height:400px;"></div>
+   <!-- <div id="graph1" style="width:100%; height:400px;"></div> -->
 
 
 
@@ -80,7 +79,9 @@ window.onload = function() { showDiv('1'); }
 <iframe width="600" height="450" frameborder="0" style="border:0" src="https://angelazhou.github.io/nyhackswaste/mydata.html"></iframe>
  </div>
 
- <div id="container2"><p>Whole bunch of text 2</div>
+ <div id="container2">
+  <div id="combination-floor" style="width:100%; height:400px;"></div>
+</div>
  <div id="container3"><p>Whole bunch of text 3</div>
  <div id="container4">
 
@@ -102,16 +103,12 @@ window.onload = function() { showDiv('1'); }
     <!-- Load JS here for greater good =============================-->
     <script src="js/jquery-1.8.2.min.js"></script>
     <script src="js/jquery-ui-1.10.0.custom.min.js"></script>
-<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="js/highcharts.js"></script>
 
     <script src="js/jquery.dropkick-1.0.0.js"></script>
-    <script src="js/custom_checkbox_and_radio.js"></script>
-    <script src="js/custom_radio.js"></script>
-    <script src="js/jquery.tagsinput.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/jquery.placeholder.js"></script>
-    <script src="js/application.js"></script>
     <script src="js/graphs.js"></script>
+        <script src="js/theme-bright.js"></script>
+
     <!--[if lt IE 8]>
       <script src="js/icon-font-ie7.js"></script>
       <script src="js/icon-font-ie7-24.js"></script>
