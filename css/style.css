@@ -16,7 +16,11 @@
     /*black bold font little*/
 }
 .spacer {
-    height:28px;
+    height:36px;
+        text-align:center;
+            vertical-align: center;
+    margin-left:auto;
+    margin-right:auto;
 }
 .green { 
     background-color:#2ecc71;
@@ -280,4 +284,8 @@ p {font-family:'Open Sans';}
 
 body {
     font-family: 'Graphik', sans-serif;
+    letter-spacing: .7px;
+    }
+    .h1{
+        letter-spacing:1px;
     }
