@@ -1,25 +1,27 @@
 $(function () { 
-    $('#container1#graph1').highcharts({
+    $('#graph1').highcharts({
         chart: {
             type: 'line'
         },
         title: {
-            text: 'Compost'
+            text: 'Personal Composting'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
         },
         yAxis: {
             title: {
-                text: 'Fruit eaten'
+                text: 'Compost Stats'
             }
         },
         series: [{
-            name: 'Jane',
+            name: 'You',
             data: [1, 0, 4]
         }, {
             name: 'John',
             data: [5, 7, 3]
+        }, {
+            name: 'Your Projected',
+            data: [1, 2, 3, 4, 5, 6]
         }]
     });
 });
