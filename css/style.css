@@ -16,10 +16,11 @@
     /*black bold font little*/
 }
 .spacer {
+
     height:36px;
         text-align:center;
 line-height:36px; 
-            vertical-align: center;
+            vertical-align: middle;
     margin-left:auto;
     margin-right:auto;
 }
