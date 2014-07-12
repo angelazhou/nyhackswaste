@@ -18,16 +18,26 @@
     height:40px;
 }
 .green { 
-    background-color:#27ae60;
+    background-color:#2ecc71;
 }
-p.floor {
-    font-color: ;
+p.building {
+    font-color: #1abc9c;
 }
-p.neighborhood {
-    font-color: ;
+.buildingbg {
+    background-color: #1abc9c;
 }
-p.borough{
-    font-color;
+.neighborhoodbg {
+    background-color: #3498db;
+}
+ p.neighborhood {
+    font-color: #3498db;
+}
+.boroughbg {
+        background-color: #e74c3c;
+
+    }
+    p.borough{
+    font-color: #e74c3c;
 }
 
 
@@ -60,12 +70,12 @@ p.borough{
     font-size: 3.8em;
     letter-spacing: -3px;
     line-height: 0px;
-    color:#8a8683;
+    color:#2ecc71;
     font-weight: 700;
 }
 #slide1 h2 {
     font-size: 2em;
-    color: #8a8683;
+    color: #FFFFFF;
     line-height: 0px;
     padding-bottom:20px;
     font-weight: 400;
@@ -84,12 +94,12 @@ p.borough{
     font-size: 3.8em;
     letter-spacing: -3px;
     line-height: 0px;
-    color:#ffffff;
+    color:#1abc9c;
     font-weight: 700;
 }
 #slide2 h2 {
     font-size: 2em;
-    color: #ffffff;
+    color: #FFFFFF;
     line-height: 0px;
     padding-bottom:20px;
     font-weight: 400;
@@ -107,12 +117,12 @@ p.borough{
     font-size: 3.8em;
     letter-spacing: -3px;
     line-height: 0px;
-    color:#8a8683;
+    color:#3498db;
     font-weight: 700;
 }
 #slide3 h2 {
     font-size: 2em;
-    color: #8a8683;
+    color: #FFFFFF;
     line-height: 0px;
     padding-bottom:20px;
     font-weight: 400;
@@ -138,12 +148,12 @@ p.borough{
     font-size: 3.8em;
     letter-spacing: -3px;
     line-height: 0px;
-    color:#ffffff;
+    color:#3498db;
     font-weight: 700;
 }
 #slide4 h2 {
     font-size: 2em;
-    color: #ffffff;
+    color: #FFFFFF;
     line-height: 0px;
     padding-bottom:20px;
     font-weight: 400;
