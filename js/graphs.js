@@ -1,7 +1,7 @@
 $(function () { 
     $('#graph1').highcharts({
         chart: {
-            type: 'line'
+            type: 'area'
         },
         title: {
             categories: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
