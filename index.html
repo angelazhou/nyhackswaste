@@ -1,117 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Urban Composting</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Loading Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>Urban Composting</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+	        <link href="css/jquery-ui.min.css" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
     <!-- Loading Flat UI -->
     <link href="css/flat-ui.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.ico">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-<div class="container"> 
-<h1 class="logo"> urban composting  </h1>
-
-
-
-<!-- switch out container div boxes -->
-<script type="text/javascript">
-// From: http://www.webdeveloper.com/forum/showthread.php?266743-Switch-Div-Content-Using-Javascript&p=1229155#post1229155
-
-function showDiv(idInfo) {
-  var sel = document.getElementById('divLinks').getElementsByTagName('div');
-  for (var i=0; i<sel.length; i++) { sel[i].style.display = 'none'; }
-
-
-  document.getElementById('container'+idInfo).style.display = 'block';
-
-  return false;
-}
-</script>
-
-<style type="text/css">
-</style>
-
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
+	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
+
 <body>
 
-   <!-- <div id="graph1" style="width:100%; height:400px;"></div> -->
+	<div class="menu">
+		<div class="container clearfix">
+			<p>Urban Composting</p>
+			<div id="logo" class="grid_3">
+				<img src="images/logo.png">
+			</div>
+
+			<div id="nav" class="grid_9 omega">
+				<ul class="navigation">
+					<li data-slide="1">Your Data <img src="images/logo.png"> </li>
+					<li data-slide="2">Your Floor <img src="images/logo.png"> </li>
+					<li data-slide="3">Your Neighborhood <img src="images/logo.png"> </li>
+					<li data-slide="4">Your Borough <img src="images/logo.png"> </li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
 
 
+	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
 
-
-
-<div id="linkDiv">
-
-  <ul class="nav nav-pills nav-stacked">
-    <li class="active"><a href="#" onclick="return showDiv('1')"><div class="spacer"><br>My Data</div></a></li>
-  <li><a href="#" onclick="return showDiv('2')"><div class="spacer"></div>Your Floor</a></li>
-  <li><a href="#" onclick="return showDiv('3')"><div class="spacer"></div>Your neighborhood</a></li>  
-  <li><a href="#" onclick="return showDiv('4')"><div class="spacer"></div>Your borough</a></li>
-</ul>
-</div>
-<p>
-
-<!-- The 4 container content divs. -->
-<!-- The 4 panels of the graphs -->
-<div id="divLinks">
- <div id="container1">
-
-
-
-<script type="text/javascript">
-window.onload = function() { showDiv('1'); }
-</script>
-
-
- </div>
- <div id="container1">
-<iframe width="600" height="450" frameborder="0" style="border:0" src="http://angelazhou.github.io/nyhackswaste/mydata.html"></iframe>
- </div>
-
- <div id="container2">
-  <div id="combination-floor" style="width:100%; height:400px;"></div>
-</div>
- <div id="container3"><p>Whole bunch of text 3</div>
- <div id="container4">
-
-
-  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Ideo%2C%20Broadway%2C%20New%20York%2C%20NY%2C%20United%20States&key=AIzaSyDxQeBxeFJYLMrEbXTDfhpIP-rYym9zGNI&q=in+Manhattan"></iframe>
-  <p>Whole bunch of text 4</div>
+		<p>Your Data</p>
+    		<div id="graph1" style="width:100%; height:400px;"></div>
+		</div>
 </div>
 
 
+	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
 
-
-
-
-
+    <div id="combination-floor" style="width:100%; height:400px;"></div>
+	</div>
 </div>
-    <footer>
-    </footer>
 
-    <!-- Load JS here for greater good =============================-->
-    <script src="js/jquery-1.8.2.min.js"></script>
-    <script src="js/jquery-ui-1.10.0.custom.min.js"></script>
-<script src="js/highcharts.js"></script>
 
-    <script src="js/jquery.dropkick-1.0.0.js"></script>
-    <script src="js/graphs.js"></script>
-        <script src="js/theme-bright.js"></script>
+	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
 
-    <!--[if lt IE 8]>
-      <script src="js/icon-font-ie7.js"></script>
-      <script src="js/icon-font-ie7-24.js"></script>
-    <![endif]-->
-  </body>
+		Your Neighborhood
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Ideo%2C%20Broadway%2C%20New%20York%2C%20NY%2C%20United%20States&key=AIzaSyDxQeBxeFJYLMrEbXTDfhpIP-rYym9zGNI&q=in+Manhattan"></iframe>
+
+		</div>
+	</div>
+
+
+
+	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			
+  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Manhattan%2C%20New%20York%2C%20NY%2C%20United%20States&key=AIzaSyDxQeBxeFJYLMrEbXTDfhpIP-rYym9zGNI"></iframe>
+
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/highcharts.js"></script>    
+	<script src="js/graphs.js"></script>
+
+
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
+</body>
 </html>
