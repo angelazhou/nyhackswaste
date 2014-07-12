@@ -4,6 +4,10 @@
     src: url('../assets/FuturaStd-Heavy.otf');
 }
 @font
+.spacer {
+    width:60px;
+    height:60px;
+}
 .container, .container-fluid {
     width:80%;
     text-align:center;
@@ -21,9 +25,12 @@
 
 #container1, #container2, #container3, #container4 {
   display:none;
-  height:400px;
-  overflow:hidden;
+  height:500px;
+
 }
+
+
+
 
 .wide-tracking {
     letter-spacing: 0.35em;

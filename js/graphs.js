@@ -4,7 +4,7 @@ $(function () {
             type: 'line'
         },
         title: {
-            text: 'Personal Composting'
+            categories: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
         },
         xAxis: {
         },

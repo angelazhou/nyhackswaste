@@ -55,10 +55,10 @@ function showDiv(idInfo) {
 <div id="linkDiv">
 
   <ul class="nav nav-pills nav-stacked">
-    <li class="active"><a href="#" onclick="return showDiv('1')">Home</a></li>
-  <li><a href="#" onclick="return showDiv('2')">Profile</a></li>
-  <li><a href="#" onclick="return showDiv('3')">Messages</a></li>  
-  <li><a href="#" onclick="return showDiv('4')">Messages</a></li>
+    <li class="active"><a href="#" onclick="return showDiv('1')"><div class="spacer"><br>My Data</div></a></li>
+  <li><a href="#" onclick="return showDiv('2')"><div class="spacer"></div>Your Floor</a></li>
+  <li><a href="#" onclick="return showDiv('3')"><div class="spacer"></div>Your neighborhood</a></li>  
+  <li><a href="#" onclick="return showDiv('4')"><div class="spacer"></div>Your borough</a></li>
 </ul>
 </div>
 <p>
@@ -76,11 +76,17 @@ window.onload = function() { showDiv('1'); }
 
 
  </div>
- <div id="container1">Container #1<p>Whole bunch of text 2</div>
+ <div id="container1">
+<iframe width="600" height="450" frameborder="0" style="border:0" src="/mydata.html"></iframe>
+ </div>
 
- <div id="container2">Container #2<p>Whole bunch of text 2</div>
- <div id="container3">Container #3<p>Whole bunch of text 3</div>
- <div id="container4">Container #4<p>Whole bunch of text 4</div>
+ <div id="container2"><p>Whole bunch of text 2</div>
+ <div id="container3"><p>Whole bunch of text 3</div>
+ <div id="container4">
+
+
+  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Ideo%2C%20Broadway%2C%20New%20York%2C%20NY%2C%20United%20States&key=AIzaSyDxQeBxeFJYLMrEbXTDfhpIP-rYym9zGNI&q=in+Manhattan"></iframe>
+  <p>Whole bunch of text 4</div>
 </div>
 
 
