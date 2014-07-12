@@ -9,10 +9,11 @@
 	<title>Urban Composting</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 	        <link href="css/jquery-ui.min.css" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <!-- Loading Flat UI -->
     <link href="css/flat-ui.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
 	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -23,33 +24,33 @@
 	<div class="menu">
 		<div class="container clearfix">
 			<p>Urban Composting</p>
-			<div id="logo" class="grid_3">
-				<img src="images/logo.png">
-			</div>
-
 			<div id="nav" class="grid_9 omega">
 				<ul class="navigation">
-					<li data-slide="1">Your Data <img src="images/logo.png"> </li>
-					<li data-slide="2">Your Floor <img src="images/logo.png"> </li>
-					<li data-slide="3">Your Neighborhood <img src="images/logo.png"> </li>
-					<li data-slide="4">Your Borough <img src="images/logo.png"> </li>
+					<li data-slide="1"><img src="images/01-Icons_Inactive.png">
+					</br> Your Data  </li>
+					<li data-slide="2"><img src="images/02-Icons_Inactive.png"> </br> Your Floor </li>
+					<li data-slide="3"><img src="images/03-Icons_Inactive.png"></br> Your Neighborhood  </li>
+					<li data-slide="4"><img src="images/04-Icons_Inactive.png"></br> Your Borough </li>
 				</ul>
 			</div>
 
 		</div>
 	</div>
 
-
+<div class="spacer"></div>
 	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
-<div class="spacer" "green"><p class="whiteH">Your Data</p> </div>
+<div class="spacer"></div>
+
+<div class="spacer green"><p class="whiteH" style="!font-color:#ecf0f1;">Your Data</p> </div>
 		
-    		<div id="graph1" style="width:100%; height:400px;"></div>
+    		<div id="individual" style="width:100%; height:400px;"></div>
+		</br>
 
-			<div class="grid_3">
+			<div id="content" class="grid_3">
 				<p class="bh">Total<p>
-
 			</div>
+
 			<div class="grid_3">
 				<p>Leader Points<p>
 			
@@ -58,7 +59,7 @@
 				<p>Methane Reduced</p>
 
 			</div>
-			<div class="grid_3">
+			<div class="grid_3 omega">
 				<p>Total</p>
 			
 			</div>
@@ -69,6 +70,7 @@
 
 	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
+<div class="spacer"></div>
 
     <div id="combination-floor" style="width:100%; height:400px;"></div>
 	</div>
@@ -80,8 +82,11 @@
     <div id="weekly" style="width:100%; height:400px;"></div>
     <div class="spacer"></div>
 
-		Your Neighborhood
-<iframe width=100% height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDxQeBxeFJYLMrEbXTDfhpIP-rYym9zGNI&zoom=16&center=40.7339%2C-74.0037"></iframe>
+        <div id="buildings" style="width:100%; height:350px;"></div>
+
+
+		<h2>Your Neighborhood<h2>
+<iframe width=100% height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDxQeBxeFJYLMrEbXTDfhpIP-rYym9zGNI&zoom=28&center=40.7339%2C-74.0037"></iframe>
 
 		</div>
 	</div>
@@ -91,6 +96,7 @@
 	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
+<div class="spacer"></div>
 			
   <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Manhattan%2C%20New%20York%2C%20NY%2C%20United%20States&key=AIzaSyDxQeBxeFJYLMrEbXTDfhpIP-rYym9zGNI"></iframe>
 
@@ -102,6 +108,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="js/highcharts.js"></script>    
 	<script src="js/graphs.js"></script>
+	<script src="js/theme-bright.js"></script>    
 
 
 	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>

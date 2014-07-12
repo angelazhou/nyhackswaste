@@ -142,4 +142,106 @@ $(function () {
         });
 
 
+     $('#buildings').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Buildings Comparison Per Year'
+            },
+            subtitle: {
+                text: 'Source: UrbanComposting'
+            },
+            xAxis: {
+                type: 'category',
+                labels: {
+                    rotation: -45,
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif'
+                    }
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Points'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            tooltip: {
+                pointFormat: 'Population in 2008: <b>{point.y:.1f} millions</b>',
+            },
+            series: [{
+                name: 'Points',
+                data: [
+                    ['Building 1', 6440],
+                    ['Building 2', 5900],
+                    ['Building 3', 6945],
+                    ['Building 4', 6200],
+                    ['Building 5', 3200],
+                    ['Building 6', 4980],
+                    ['Building 7', 6015],
+                    ['Building 8', 6015],
+                    ['Building 9', 5995],
+                    ['Building 10', 6500],
+                    
+                ],
+                dataLabels: {
+                    enabled: true,
+                    rotation: -90,
+                    color: '#FFFFFF',
+                    align: 'right',
+                    x: 4,
+                    y: 10,
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif',
+                        textShadow: '0 0 3px black'
+                    }
+                }
+            }]
+        });
+
+       $('#individual').highcharts({
+            title: {
+                text: 'Weekly Waste Composting',
+                x: -20 //center
+            },
+            subtitle: {
+                text: 'Source: UrbanComposting.com',
+                x: -20
+            },
+            xAxis: {
+                categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            },
+            yAxis: {
+                title: {
+                    text: 'Composting Weight Total (lbs.)'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                valueSuffix: '°C'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+            series: [{
+                name: 'Apt 1A - single',
+                data: [3.0, 2.3, 2.1, 1.8, 2.5, 3.2, 4.2]
+            }]
+        });
+
+
+
 });

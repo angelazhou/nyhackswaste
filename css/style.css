@@ -7,14 +7,30 @@
 }
 .whiteH {
     font-family:HelveticaN, Open-Sans, sans-serif; 
-    font-color:#FFFFFF;
+    font-color:#ecf0f1;
+}
+
+.bh {
+
+    /*black bold font little*/
 }
 .spacer {
-    height:30px;
+    height:40px;
 }
 .green { 
     background-color:#27ae60;
 }
+p.floor {
+    font-color: ;
+}
+p.neighborhood {
+    font-color: ;
+}
+p.borough{
+    font-color;
+}
+
+
 
 .menu {
     position:fixed;
@@ -28,7 +44,7 @@
 .slide{
     background-attachment: fixed;
     width:100%;
-    height:auto;
+    height:100%;
     position: relative;
     padding:140px 0;
 }
