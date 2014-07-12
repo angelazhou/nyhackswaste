@@ -5,6 +5,12 @@
     margin-left:auto;
     margin-right:auto;
 }
+.spacer > p {
+    padding-top:2px;
+}
+.buildingbg, .neighborhoodbg, .boroughbg {
+    padding-top:2px;
+}
 .whiteH {
     font-family:HelveticaN, Open-Sans, sans-serif; 
     font-color:#ecf0f1;
