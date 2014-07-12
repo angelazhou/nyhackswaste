@@ -1,7 +1,7 @@
 $(function () { 
     $('#graph1').highcharts({
         chart: {
-            type: 'area'
+            type: 'line'
         },
         title: {
             categories: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
@@ -88,6 +88,58 @@ $(function () {
             }
         }]
     });
+
+
+
+
+ $('#weekly').highcharts({
+            title: {
+                text: 'Weekly Waste Composting',
+                x: -20 //center
+            },
+            subtitle: {
+                text: 'Source: UrbanComposting.com',
+                x: -20
+            },
+            xAxis: {
+                categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            },
+            yAxis: {
+                title: {
+                    text: 'Composting Weight Total (lbs.)'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                valueSuffix: '°C'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+            series: [{
+                name: 'Apt 1A - single',
+                data: [3.0, 2.3, 2.1, 1.8, 2.5, 3.2, 4.2]
+            }, {
+                name: 'Apt 1B - single',
+                data: [2.8, 3.1, 1.6, 2.5, 2.0, 1.9, 3.6]
+            }, {
+                name: 'Apt 1C - couple',
+                data: [5.6, 6.4, 5.0, 7.2, 6.1, 4.5, 7.5]
+            }, {
+                name: 'Apt 1d - couple',
+                data: [5.1, 6.5, 4.0, 6.3, 6.4, 5.2, 6.3]
+            },{
+                name: 'Apt 1E - family (4)',
+                data: [10.0, 10.5, 12.0, 9.0, 11.0, 8.9, 12.5]
+            }]
+        });
 
 
 });
